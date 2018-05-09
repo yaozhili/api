@@ -7,5 +7,5 @@ myapi = Api(
 	serve_challenge_on_401=True
 )
 
-from order import api
-myapi.add_namespace(order.api, path='api/order')
+from .order import api as order_api
+myapi.add_namespace(order_api, path='api/order')

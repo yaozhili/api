@@ -2,7 +2,6 @@ from flask import request
 from datetime import datetime, timedelta
 from flask_restplus import Namespace, Resource
 
-
 api = Namespace('order')
 
 @api.route('/')
